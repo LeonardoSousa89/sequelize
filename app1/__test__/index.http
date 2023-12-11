@@ -1,0 +1,20 @@
+
+POST  http://localhost:3000/create/user HTTP/2.0
+content-type: application/json
+
+{ "nickName": "Leozin88" }
+
+###
+GET http://localhost:3000/get/all/users HTTP/2.0
+
+###
+GET http://localhost:3000/get/user/3 HTTP/2.0
+
+###
+PUT http://localhost:3000/update/user/6 HTTP/2.0
+content-type: application/json
+
+{ "nickName": "Leleu89" }
+
+###
+DELETE http://localhost:3000/delete/user/6 HTTP/2.0
